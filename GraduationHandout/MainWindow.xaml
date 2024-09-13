@@ -1,0 +1,39 @@
+﻿<Window x:Class="GraduationHandout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraduationHandout"
+        mc:Ignorable="d"
+        Title="Graduation Handout" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="paperboard-texture.jpg"/>
+        </Grid.Background>
+        <Label Content="University of Oklahoma" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="143,0,0,342.667" Height="78" Width="509" FontFamily="Imprint MT Shadow" FontSize="48"/>
+        <Label Content="Congratulations, graduates!" HorizontalAlignment="Left" Height="39" Margin="292,78,0,0" VerticalAlignment="Top" Width="305" FontFamily="Edwardian Script ITC" FontSize="22"/>
+        <Label Content="Est. 1890" HorizontalAlignment="Left" Height="23" Margin="359,61,0,0" VerticalAlignment="Top" Width="69" FontFamily="Century Schoolbook"/>
+        <TextBox x:Name="txtFName" HorizontalAlignment="Left" Height="15" Margin="163,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <Label Content="First Name:" HorizontalAlignment="Left" Height="21" Margin="71,122,0,0" VerticalAlignment="Top" Width="72" FontFamily="Goudy Old Style"/>
+        <TextBox x:Name="txtLName" HorizontalAlignment="Left" Height="15" Margin="163,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Height="22" Margin="69,141,0,0" VerticalAlignment="Top" Width="77" FontFamily="Goudy Old Style"/>
+        <TextBox x:Name="txtMajor" HorizontalAlignment="Left" Height="15" Margin="163,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Major: " HorizontalAlignment="Left" Height="22" Margin="71,161,0,0" VerticalAlignment="Top" Width="49" FontFamily="Goudy Old Style"/>
+        <TextBox x:Name="txtGPA" HorizontalAlignment="Left" Height="15" Margin="163,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Cumulative GPA:" HorizontalAlignment="Left" Height="34" Margin="69,183,0,0" VerticalAlignment="Top" Width="94" FontFamily="Goudy Old Style"/>
+        <TextBox x:Name="txtStreetNum" HorizontalAlignment="Left" Height="15" Margin="163,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="txtStreetName" HorizontalAlignment="Left" Height="15" Margin="163,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="15" Margin="163,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Height="15" Margin="163,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="txtZipcode" HorizontalAlignment="Left" Height="15" Margin="163,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Street Name:" HorizontalAlignment="Left" Height="24" Margin="71,236,0,0" VerticalAlignment="Top" Width="75" FontFamily="Goudy Old Style"/>
+        <Label Content="Street Number:" HorizontalAlignment="Left" Height="26" Margin="71,220,0,0" VerticalAlignment="Top" Width="98" FontFamily="Goudy Old Style"/>
+        <Label Content="City:" HorizontalAlignment="Left" Height="23" Margin="71,257,0,0" VerticalAlignment="Top" Width="44" FontFamily="Goudy Old Style"/>
+        <Label Content="State:" HorizontalAlignment="Left" Height="25" Margin="71,280,0,0" VerticalAlignment="Top" Width="44" FontFamily="Goudy Old Style"/>
+        <Label Content="Zipcode:" HorizontalAlignment="Left" Height="29" Margin="71,304,0,0" VerticalAlignment="Top" Width="49" FontFamily="Goudy Old Style"/>
+        <Label Content="Live On University!" HorizontalAlignment="Left" Height="34" Margin="87,377,0,0" VerticalAlignment="Top" Width="165" FontFamily="Imprint MT Shadow" FontSize="18"/>
+        <ListBox x:Name="lstGraduationHandout" HorizontalAlignment="Left" Height="292" Margin="359,122,0,0" VerticalAlignment="Top" Width="424"/>
+        <Button x:Name="btnSubmit" Content="Submit Information" HorizontalAlignment="Left" Height="25" Margin="116,342,0,0" VerticalAlignment="Top" Width="123" FontFamily="Bahnschrift Light" Background="#FFBA5A1B" Click="btnSubmit_Click" IsDefault="True"/>
+
+    </Grid>
+</Window>
